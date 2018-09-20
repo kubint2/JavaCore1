@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0691)https://adi.admicro.vn/adt/banners/nam2015/4043/min_html5/huyennguyenthithu/2018_08_07/160x600_ymh/160x600_ymh/160x600_ymh.html?url=https%3A%2F%2Flg1.logging.admicro.vn%2Fgdsp%3Fdmn%3Dhttps%253A%2F%2Fo7planning.org%2Fvi%2F10169%2Fhuong-dan-lap-trinh-java-servlet%26ggid%3DCAESENyuXHMFkReL-bX2DK8txgU%26grid%3DW6OfmQAHeS8KcIOR%2BA4Mfg%3D%3D%26lsn%3D1537449881567%26ii%3D788984631%26bi%3D0%26cmpg%3D32173%26items%3D114522%26zid%3D475106%26cid%3D-1%26pt%3Dgdsp%26%26tp%3D11%26tpn%3D4%26cov%3D1%26pr%3D11496171621%26adc_cpa%3D1%26re%3Dhttps%253A%252F%252Fwww.khuyenmainvx.com%252F%253Futm_source%253Dadnetwork%2526utm_medium%253Dbanner%2526utm_campaign%253DNVXPromo&admid=adnzone_475106_0_114522 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Rm9ybWF0U3VjY2Vzc2Z1bGw=-->
+
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>160x600</title>
+
+<script src="./createjs-2015.11.26.min.js.download"></script>
+<script src="./160x600_ymh.js.download"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	images = images||{};
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib._160x600();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		window.addEventListener("message",receiveMessage,false);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+var getQuery=function(e){var d="";return(e=new RegExp("[?&]"+encodeURIComponent(e)+"=([^&]*)").exec(location.search))&&(d=decodeURIComponent(e[1])),d},URLAdm=getQuery("url"),admid=getQuery("admid");"undefined"!==admid&&"null"!==admid&&parent.postMessage("complete_"+admid,"*");
+	}	    
+	
+	fnStartAnimation();
+}
+</script>
+
+
+<script type="text/javascript">function receiveMessage(e){try{-1!=e.data.indexOf("pause")?("function"==typeof pauseVideoBanner&&pauseVideoBanner(),createjs.Ticker.removeEventListener("tick",stage)()):-1!=e.data.indexOf("start")&&"undefined"!=typeof flagReplay&&(flagReplay,checkStatusReplay(flagReplay))}catch(e){}}function replayBanner(){createjs.Ticker.addEventListener("tick",stage),exportRoot._reset(),window.chkReset=!1,"function"==typeof initForm&&initForm(),"function"==typeof pauseVideoG&&pauseVideoG(),flagReplay=!1;var e=document.getElementById("bg_replay");e&&(e.style.display="none"),"undefined"!=typeof main&&main.gotoAndPlay(0),"function"==typeof initVideo&&initVideo()}function createDOM(){var e=document.createElement("div");e.id="bg_replay",e.style.display="block",e.style.width="0px",e.style.height="0px";var t=document.getElementById("canvas");t.insertBefore(e,t.firstChild)}function checkStatusReplay(e){"undefined"!=typeof playVideo?playVideo?(createjs.Ticker.addEventListener("tick",stage),"function"==typeof continueVideoBanner&&continueVideoBanner()):(createjs.Ticker.addEventListener("tick",stage),e&&replayBanner()):e?replayBanner():createjs.Ticker.addEventListener("tick",stage)}</script>
+</head>
+<body onload="init();" style="background:transparent;margin:0px;">
+	<div id="animation_container">
+		<canvas id="canvas" width="160" height="600" style="background:transparent;margin:0px;"></canvas>
+		<div id="dom_overlay_container">
+		</div>
+	</div>
+	<script type="text/javascript">(function(){if(window.console&&console.log){var old=console.log;console.log=function(){}}})();</script>
+
+<div id="bg_replay" style="display: block; width: 0px; height: 0px;"></div></body></html>

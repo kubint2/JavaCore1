@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(1031)https://adi.admicro.vn/adt/banners/nam2015/4043/min_html5/anhnguyendoanle/2018_05_17/300x250bo4/300x250bo4/300x250bo4.html?url=https%3A%2F%2Flg1.logging.admicro.vn%2Fgdsp%3Fdmn%3Dhttps%253A%2F%2Fo7planning.org%2Fvi%2F10169%2Fhuong-dan-lap-trinh-java-servlet%26ggid%3DCAESENyuXHMFkReL-bX2DK8txgU%26grid%3DW6Oj5QAMkdAKaJ9CaAArhw%3D%3D%26lsn%3D1537450983224%26ii%3D712447211%26bi%3D0%26cmpg%3D30337%26items%3D106569%26zid%3D475104%26cid%3D-1%26pt%3Dgdsp%26%26tp%3D11%26tpn%3D4%26cov%3D1%26pr%3D10701414632%26adc_cpa%3D1%26re%3Dhttp%253A%252F%252Froiloanphattrien.vn%252Fnghien-cuu-tac-dung-cua-vuong-nao-khang-trong-ho-tro-dieu-tri-roi-loan-tu-ky-tai-bv-nhi-tu%252F%253Futm_source%253DADX%252BBanner%252BPh%2525E1%2525BA%2525BFu%252B2%252B-%252BGi%2525E1%2525BA%2525A3m%252Bb%2525E1%2525BB%25259Bt%252Bn%2525E1%2525BB%252597i%252Blo%252Bcha%252Bm%2525E1%2525BA%2525B9%252Bt%2525E1%2525BB%2525B1%252Bk%2525E1%2525BB%2525B7%2526utm_medium%253DADX%252BPh%2525E1%2525BB%252585u%252B2%2526utm_campaign%253DADX&admid=adnzone_475104_0_106569 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--bWluaHRtbDU=-->
+<!--Rm9ybWF0U3VjY2Vzc2Z1bGw=-->
+
+<title>300x250bo4</title>
+
+
+
+<script src="./createjs-2015.11.26.min.js.download"></script>
+<script src="./300x250bo4.js.download"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._300x250bo4();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	window.addEventListener("message",receiveMessage,false);
+		createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+var getQuery=function(e){var d="";return(e=new RegExp("[?&]"+encodeURIComponent(e)+"=([^&]*)").exec(location.search))&&(d=decodeURIComponent(e[1])),d},URLAdm=getQuery("url"),admid=getQuery("admid");"undefined"!==admid&&"null"!==admid&&parent.postMessage("complete_"+admid,"*");
+}
+
+</script>
+
+
+
+
+<script type="text/javascript">function receiveMessage(e){try{-1!=e.data.indexOf("pause")?("function"==typeof pauseVideoBanner&&pauseVideoBanner(),createjs.Ticker.removeEventListener("tick",stage)()):-1!=e.data.indexOf("start")&&"undefined"!=typeof flagReplay&&(flagReplay,checkStatusReplay(flagReplay))}catch(e){}}function replayBanner(){createjs.Ticker.addEventListener("tick",stage),exportRoot._reset(),window.chkReset=!1,"function"==typeof initForm&&initForm(),"function"==typeof pauseVideoG&&pauseVideoG(),flagReplay=!1;var e=document.getElementById("bg_replay");e&&(e.style.display="none"),"undefined"!=typeof main&&main.gotoAndPlay(0),"function"==typeof initVideo&&initVideo()}function createDOM(){var e=document.createElement("div");e.id="bg_replay",e.style.display="block",e.style.width="0px",e.style.height="0px";var t=document.getElementById("canvas");t.insertBefore(e,t.firstChild)}function checkStatusReplay(e){"undefined"!=typeof playVideo?playVideo?(createjs.Ticker.addEventListener("tick",stage),"function"==typeof continueVideoBanner&&continueVideoBanner()):(createjs.Ticker.addEventListener("tick",stage),e&&replayBanner()):e?replayBanner():createjs.Ticker.addEventListener("tick",stage)}</script>
+</head>
+<body onload="init();" style="background:transparent;margin:0px;">
+	<canvas id="canvas" width="300" height="250" style="background-color:#FFFFFF"><div id="bg_replay" style="display: block; width: 0px; height: 0px;"></div></canvas>
+	<script type="text/javascript">(function(){if(window.console&&console.log){var old=console.log;console.log=function(){}}})();</script>
+
+
+</body></html>

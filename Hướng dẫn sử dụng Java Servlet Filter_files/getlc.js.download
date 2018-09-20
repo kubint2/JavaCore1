@@ -1,0 +1,1 @@
+var repLoc = "Vietnam";var repCty = "Thanh Pho Ho Chi Minh";var repState = "Sg";var el = "xWf5B1V";var ec = "rX1BXd Xvd0vdeXWdlWBX";var es = "Rs";
